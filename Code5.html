@@ -11,7 +11,7 @@
       /* p {
         background-color: red;
       } */
-      .para {
+      /* .para {
         color: white;
         background-color: blue;
       }
@@ -32,11 +32,71 @@
       h4,
       h5 {
         color: red;
+      } */
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        border-radius: 50%;
+      }
+      .box:hover {
+        background-color: red;
+      }
+      .box:active {
+        background-color: black;
+      }
+      input:focus {
+        background-color: red;
+      }
+
+      /* li:nth-child(odd) {
+        background-color: blue;
+      }
+      li:nth-child(even) {
+        background-color: yellow;
+      } */
+
+      /* li:nth-of-type(15) {
+        background-color: red;
+      } */
+
+      li:first-child {
+        background-color: red;
+      }
+      li:last-child {
+        background-color: blue;
+      }
+
+      li:not(.list1) {
+        background-color: gray;
       }
     </style>
   </head>
   <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
+    <ul>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li class="list1">list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+      <li>list1</li>
+    </ul>
+    <input type="text" />
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1>
     <h2>Lorem ipsum dolor sit amet.</h2>
     <h3>Lorem ipsum dolor sit amet.</h3>
     <h4>Lorem ipsum dolor sit amet.</h4>
@@ -64,6 +124,8 @@
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt dolorum
       ut obcaecati doloribus quidem facilis mollitia explicabo, dolores maiores
       odit maxime. Nemo ipsum soluta repudiandae a enim. Quidem, delectus eos!
-    </p>
+    </p> -->
+
+    <div class="box"></div>
   </body>
 </html>
