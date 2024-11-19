@@ -71,10 +71,41 @@
       li:not(.list1) {
         background-color: gray;
       }
+      p::before {
+        content: "Hello";
+      }
+      p::after {
+        content: "BYE";
+      }
+
+      p::first-line {
+        color: red;
+      }
+
+      p::first-letter {
+        font-size: 20px;
+        color: blue;
+      }
+
+      p::selection {
+        background-color: yellow;
+        color: black;
+      }
+
+      input::placeholder {
+        color: red;
+      }
     </style>
   </head>
   <body>
-    <ul>
+    <input type="text" placeholder="Name" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eius
+      reprehenderit perspiciatis molestiae facere eligendi necessitatibus neque
+      vitae excepturi sit. Molestiae earum voluptatem natus sit ipsa saepe
+      consequuntur similique quod!
+    </p>
+    <!-- <ul>
       <li>list1</li>
       <li>list1</li>
       <li>list1</li>
@@ -95,7 +126,7 @@
       <li>list1</li>
       <li>list1</li>
     </ul>
-    <input type="text" />
+    <input type="text" /> -->
     <!-- <h1>Lorem ipsum dolor sit amet.</h1>
     <h2>Lorem ipsum dolor sit amet.</h2>
     <h3>Lorem ipsum dolor sit amet.</h3>
@@ -126,6 +157,6 @@
       odit maxime. Nemo ipsum soluta repudiandae a enim. Quidem, delectus eos!
     </p> -->
 
-    <div class="box"></div>
+    <!-- <div class="box"></div> -->
   </body>
 </html>
