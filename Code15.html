@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      p {
+      * {
+        margin: 0;
+      }
+      /* p {
         background-color: blueviolet;
         display: inline;
       }
@@ -17,7 +20,7 @@
       h1 {
         background-color: yellow;
         display: inline-block;
-        /* display: none; */
+        display: none;
         width: 100%;
         height: 200px;
       }
@@ -26,15 +29,71 @@
         display: none;
       }
       h3 {
-        /* display: none; */
+        display: none;
+      } */
+
+      .row {
+        display: flex;
+        gap: 30px;
+      }
+      .colImage img {
+        width: 300px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        margin-top: 40px;
+      }
+      nav {
+        background-color: black;
+        color: white;
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+        justify-content: start;
+        justify-content: end;
+        justify-content: space-around;
+        justify-content: space-between;
+        justify-content: space-evenly;
+      }
+      ul {
+        display: flex;
+        gap: 40px;
       }
     </style>
   </head>
   <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1>
     <p>Lorem ipsum dolor sit amet.</p>
     <span>Lorem ipsum dolor sit amet.</span>
     <h2>Lorem ipsum dolor sit amet.</h2>
-    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3> -->
+    <nav>
+      <div class="logo">LOGO</div>
+      <ul>
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>list4</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="colImage">
+          <img
+            src="https://img.freepik.com/free-photo/woman-with-computer_1303-5922.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid"
+            alt=""
+          />
+        </div>
+        <div class="colText">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            amet porro ea, vitae cupiditate blanditiis ullam dolorem voluptatum
+            vel nihil atque, quis accusantium possimus deleniti commodi expedita
+            quidem doloribus ducimus.
+          </p>
+          <button>Click me</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
