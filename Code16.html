@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      nav {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      ul {
+        list-style: none;
+        display: none;
+        gap: 20px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      /* sec-1 */
+      .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .col1 img {
+        width: 300px;
+      }
+      @media only screen and (min-width: 500px) {
+        nav ul {
+          display: flex;
+        }
+        .icons {
+          display: none;
+        }
+
+        .row {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">LOGO</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icons">⏸️</div>
+    </nav>
+
+    <!-- ========== Start Section-1 ========== -->
+    <div class="row">
+      <div class="col1">
+        <img
+          src="https://img.freepik.com/free-photo/social-caucasian-park-using-tablet_1303-320.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid"
+          alt=""
+        />
+      </div>
+      <div class="col2">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
+          quibusdam.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <!-- ========== End Section-1 ========== -->
+  </body>
+</html>
