@@ -15,9 +15,9 @@
         justify-content: space-between;
         padding: 10px;
       }
-      ul {
+      nav ul {
         list-style: none;
-        display: none;
+        display: flex;
         gap: 20px;
       }
       nav a {
@@ -29,7 +29,7 @@
       /* sec-1 */
       .row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 20px;
@@ -37,7 +37,10 @@
       .col1 img {
         width: 300px;
       }
-      @media only screen and (min-width: 500px) {
+      .icons {
+        display: none;
+      }
+      /* @media only screen and (min-width: 500px) {
         nav ul {
           display: flex;
         }
@@ -47,6 +50,18 @@
 
         .row {
           flex-direction: row;
+        }
+      } */
+
+      @media only screen and (max-width: 500px) {
+        .icons {
+          display: block;
+        }
+        nav ul {
+          display: none;
+        }
+        .row {
+          flex-direction: column;
         }
       }
     </style>
