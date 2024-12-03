@@ -9,11 +9,29 @@
         width: 200px;
         height: 200px;
         background-color: red;
-        transition: all 1s linear 1s;
+        transition: all 1s linear;
+        /* transform-origin: bottom right; */
+        margin: 100px;
       }
       .box:hover {
         background-color: blue;
-        border-radius: 50%;
+        /* border-radius: 50%; */
+        /* transform: translate(100px);
+        transform: translateY(100px);
+        transform: translateX(100px);
+        transform: translate(100px, 50px); */
+
+        transform: rotateY(120deg);
+        transform: rotateX(120deg);
+        transform: rotate(120deg);
+
+        transform: scale(0.7);
+        transform: scaleX(2);
+        transform: scaleY(2);
+
+        transform: skewX(45deg);
+        transform: skewY(45deg);
+        transform: skew(105deg, 100deg);
       }
     </style>
   </head>
