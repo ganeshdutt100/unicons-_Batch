@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: background-color 1s;
+        animation: box1 6s linear alternate infinite;
+      }
+
+      @keyframes box1 {
+        0% {
+          background-color: black;
+          background: url("https://img.freepik.com/free-photo/woman-with-computer_1303-5922.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybridhttps://img.freepik.com/free-photo/photographer-hand-holding-camera-standing-top-rock-nature-travel-concept-vintage-tone_335224-897.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid");
+          background-size: contain;
+        }
+        50% {
+          background-color: blue;
+          background: url("https://img.freepik.com/free-photo/social-caucasian-park-using-tablet_1303-320.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid");
+          background-size: contain;
+        }
+        100% {
+          background-color: green;
+          background: url("https://img.freepik.com/free-photo/photographer-hand-holding-camera-standing-top-rock-nature-travel-concept-vintage-tone_335224-897.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid");
+          background-size: contain;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
